@@ -1,21 +1,5 @@
 import pygame
 import sys
-import random
-
-
-class Cell:
-    
-
-
-class Field:
-    def __init__(self, width, height):
-        self.height = height
-        self.width = width
-        self.lst = [[0] * width for i in range(height)]
-
-
-
-
 
 
 
