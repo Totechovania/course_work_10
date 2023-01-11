@@ -1,5 +1,31 @@
 import pygame
 import sys
+import random
+
+
+class Cell:
+    def __init__(self, start_energy, start_organic ,light_to_energy, soil_to_organic, movement, attack, reproduction, mind):
+        self.energy = start_energy
+        self.organic = start_organic
+        self.efficiency = {
+            'свет в энергию': light_to_energy,
+            'почва в вещество': soil_to_organic,
+            'движение': movement,
+            'атака': attack,
+            'размножение': reproduction
+        }
+        self.mind = mind
+
+
+class Field:
+    def __init__(self, width, height):
+        self.height = height
+        self.width = width
+        self.lst = [[0] * width for i in range(height)]
+
+
+
+
 
 
 
